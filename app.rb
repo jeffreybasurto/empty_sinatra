@@ -4,7 +4,6 @@ require 'sass'
 Dir[File.dirname(__FILE__) + '/lib/*.rb'].each {|file| require file }
 
 class App < Sinatra::Base
-  set :public, File.dirname(__FILE__) + '/public'
   set :static, true
 
 # uncomment for the most simple app wide authentication possible.
